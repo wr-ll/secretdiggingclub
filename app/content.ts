@@ -9,7 +9,7 @@ export const site = {
 
 export type ContentBlock =
   | { type: "paragraph"; text: string }
-  | { type: "heading"; text: string }
+  | { type: "heading"; text: string; originalTitle?: string }
   | { type: "quote"; text: string; attribution?: string }
   | { type: "list"; items: string[] }
   | { type: "notice"; lines: string[] };
@@ -61,9 +61,9 @@ export const people: Person[] = [
     name: "wrell",
     links: [],
     translations: {
-      en: { role: "Owner / site maintainer", bio: "Owner and maintainer of the Secret Digging Club website.", interests: [] },
-      ja: { role: "オーナー / サイト管理者", bio: "Secret Digging Clubウェブサイトのオーナー兼管理者です。", interests: [] },
-      ko: { role: "소유자 / 사이트 관리자", bio: "비밀발굴부 웹사이트의 소유자이자 관리자입니다.", interests: [] },
+      en: { role: "Owner / site maintainer", bio: "", interests: [] },
+      ja: { role: "オーナー / サイト管理者", bio: "", interests: [] },
+      ko: { role: "소유자 / 사이트 관리자", bio: "", interests: [] },
     },
   },
 ];

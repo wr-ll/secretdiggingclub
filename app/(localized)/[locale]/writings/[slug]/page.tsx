@@ -46,7 +46,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
         <aside className="article-aside" aria-label={copy.article.tags}><p>{copy.article.tags}</p><ul className="tag-list">{post.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul></aside>
         <article className="prose">
           {post.blocks.map((block, index) => {
-            if (block.type === "heading") return <h2 key={index}>{block.text}</h2>;
+            if (block.type === "heading") return <div className="article-section-heading" key={index}><h2>{block.text}</h2>{block.originalTitle ? <p><em>{block.originalTitle}</em></p> : null}</div>;
             if (block.type === "quote") return <blockquote key={index}><p>{block.text}</p>{block.attribution ? <cite>{block.attribution}</cite> : null}</blockquote>;
             if (block.type === "list") return <ul key={index}>{block.items.map((item) => <li key={item}>{item}</li>)}</ul>;
             if (block.type === "notice") return <aside className="translation-notice" key={index}>{block.lines.map((line, lineIndex) => lineIndex === 0 ? <strong key={line}>{line}</strong> : <p key={line}>{line}</p>)}</aside>;

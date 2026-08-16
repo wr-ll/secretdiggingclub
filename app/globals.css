@@ -435,9 +435,12 @@ a:focus-visible {
 
 .prose > *:first-child { margin-top: 0; }
 .prose p { margin: 0 0 1.4em; }
-.prose h2 { margin: 2.2em 0 0.7em; font-size: 1.55rem; line-height: 1.25; }
+.prose h2 { margin: 0; font-size: 1.55rem; line-height: 1.25; }
 .prose ul { padding-left: 1.25em; }
 .prose li { margin-bottom: 0.5em; }
+
+.article-section-heading { margin: 2.2em 0 0.7em; }
+.article-section-heading p { margin: 0.45em 0 0; color: var(--muted); font-size: 0.78rem; line-height: 1.5; }
 
 .prose blockquote {
   margin: 2em 0;

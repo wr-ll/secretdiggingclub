@@ -51,12 +51,16 @@ test("publishes the album translation only in English and Korean", async () => {
   assert.match(korean, /의견\/해석/);
   assert.match(korean, /츠쿠미즈/);
   assert.match(korean, /비봉클럽/);
-  assert.match(korean, /폐허 속 인공 낙원/);
+  assert.match(korean, /영장 아라마시쿄 ~ Artificial Utopia in Ruins\./);
   assert.match(english, /Artificial Utopia in Ruins/);
+  assert.doesNotMatch(english, /霊長新益京 ~ Artificial Utopia in Ruins\./);
   assert.match(englishArticle, /Unofficial fan translation/);
   assert.match(englishArticle, /Team Shanghai Alice \/ ZUN/);
+  assert.match(englishArticle, /美しく心地の良い犯罪 — Criminal Ingress/);
   assert.match(koreanArticle, /비공식 팬 번역입니다/);
   assert.match(koreanArticle, /상하이 앨리스 환악단 \/ ZUN/);
+  assert.match(koreanArticle, /1\. 아름답고 기분 좋은 범죄/);
+  assert.match(koreanArticle, /美しく心地の良い犯罪 — Criminal Ingress/);
   await assert.rejects(access(new URL("ja/writings/artificial-utopia-in-ruins.html", outputRoot)));
 });
 
@@ -69,6 +73,9 @@ test("publishes the wrell profile in all languages", async () => {
   assert.match(english, /Owner \/ site maintainer/);
   assert.match(japanese, /オーナー \/ サイト管理者/);
   assert.match(korean, /소유자 \/ 사이트 관리자/);
+  assert.doesNotMatch(english, /Owner and maintainer of the Secret Digging Club website/);
+  assert.doesNotMatch(japanese, /Secret Digging Clubウェブサイトのオーナー兼管理者/);
+  assert.doesNotMatch(korean, /비밀발굴부 웹사이트의 소유자이자 관리자/);
 });
 
 test("includes the permanent Discord invitation", async () => {

@@ -8,9 +8,9 @@ export const artificialUtopiaInRuins = {
   "readingMinutes": 10,
   "translations": {
     "en": {
-      "title": "霊長新益京 ~ Artificial Utopia in Ruins.",
+      "title": "Artificial Utopia in Ruins",
       "subtitle": "Unofficial English translation of the album story",
-      "summary": "An unofficial English translation of the eleven-part story accompanying the Hifuu Club album 霊長新益京 ~ Artificial Utopia in Ruins.",
+      "summary": "An unofficial English translation of the eleven-part story accompanying the Hifuu Club album Artificial Utopia in Ruins.",
       "tags": [
         "Hifuu Club",
         "Touhou Project",
@@ -28,7 +28,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "1. Criminal Ingress"
+          "text": "1. Criminal Ingress",
+          "originalTitle": "美しく心地の良い犯罪 — Criminal Ingress"
         },
         {
           "type": "paragraph",
@@ -64,7 +65,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "2. Amazing Park Nara"
+          "text": "2. Amazing Park Nara",
+          "originalTitle": "奈良異界公園 — Amazing Park Nara"
         },
         {
           "type": "paragraph",
@@ -116,7 +118,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "3. Metro Network in Fantasia"
+          "text": "3. Metro Network in Fantasia",
+          "originalTitle": "幻想の地下大線路網 — Metro Network in Fantasia"
         },
         {
           "type": "paragraph",
@@ -148,7 +151,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "4. Unlocated Hell"
+          "text": "4. Unlocated Hell",
+          "originalTitle": "アンロケイテッドヘル — Unlocated Hell"
         },
         {
           "type": "paragraph",
@@ -208,7 +212,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "5. Aramashi Planned City"
+          "text": "5. Aramashi Planned City",
+          "originalTitle": "文化計画都市　霊長新益京 — Aramashi Planned City"
         },
         {
           "type": "paragraph",
@@ -308,7 +313,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "6. Reminiscences on her childhood"
+          "text": "6. Reminiscences on her childhood",
+          "originalTitle": "鹿狩りのレミニセンス — Reminiscences on her childhood"
         },
         {
           "type": "paragraph",
@@ -364,7 +370,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "7. Lacky kitten"
+          "text": "7. Lacky kitten",
+          "originalTitle": "大吉キトゥン — Lacky kitten"
         },
         {
           "type": "paragraph",
@@ -416,7 +423,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "8. Beast Metropolis"
+          "text": "8. Beast Metropolis",
+          "originalTitle": "ビーストメトロポリス — Beast Metropolis"
         },
         {
           "type": "paragraph",
@@ -468,7 +476,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "9. Bronze Statue of Vairocana"
+          "text": "9. Bronze Statue of Vairocana",
+          "originalTitle": "盧舎那仏遺構 — Bronze Statue of Vairocana"
         },
         {
           "type": "paragraph",
@@ -532,7 +541,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "10. Idoratrize World"
+          "text": "10. Idoratrize World",
+          "originalTitle": "偶像に世界を委ねて — Idoratrize World"
         },
         {
           "type": "paragraph",
@@ -576,7 +586,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "11. For a humanity that embraces failure —— the next 2000 years."
+          "text": "11. For a humanity that embraces failure —— the next 2000 years.",
+          "originalTitle": "失敗を尊ぶ人類に、次の二千年を — For a humanity that embraces failure —— the next 2000 years."
         },
         {
           "type": "paragraph",
@@ -633,9 +644,9 @@ export const artificialUtopiaInRuins = {
       ]
     },
     "ko": {
-      "title": "영장신익경 ~ 폐허 속 인공 낙원",
+      "title": "영장 아라마시쿄 ~ Artificial Utopia in Ruins.",
       "subtitle": "앨범 스토리 비공식 한국어 번역",
-      "summary": "비봉클럽 앨범 霊長新益京 ~ Artificial Utopia in Ruins.에 수록된 11편의 스토리를 옮긴 비공식 한국어 번역입니다.",
+      "summary": "비봉클럽 앨범 영장 아라마시쿄 ~ Artificial Utopia in Ruins.에 수록된 11편의 스토리를 옮긴 비공식 한국어 번역입니다.",
       "tags": [
         "비봉클럽",
         "동방 프로젝트",
@@ -653,7 +664,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "1. 아름답고 기분 좋은 범죄"
+          "text": "1. 아름답고 기분 좋은 범죄",
+          "originalTitle": "美しく心地の良い犯罪 — Criminal Ingress"
         },
         {
           "type": "paragraph",
@@ -689,7 +701,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "2. 나라 이계공원"
+          "text": "2. 나라 이계공원",
+          "originalTitle": "奈良異界公園 — Amazing Park Nara"
         },
         {
           "type": "paragraph",
@@ -741,7 +754,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "3. 환상의 지하 대철도망"
+          "text": "3. 환상의 지하 대철도망",
+          "originalTitle": "幻想の地下大線路網 — Metro Network in Fantasia"
         },
         {
           "type": "paragraph",
@@ -769,7 +783,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "4. 언로케이티드 헬"
+          "text": "4. 언로케이티드 헬",
+          "originalTitle": "アンロケイテッドヘル — Unlocated Hell"
         },
         {
           "type": "paragraph",
@@ -829,7 +844,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "5. 문화 계획도시 영장신익경"
+          "text": "5. 문화 계획도시 영장신익경",
+          "originalTitle": "文化計画都市　霊長新益京 — Aramashi Planned City"
         },
         {
           "type": "paragraph",
@@ -929,7 +945,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "6. 사슴 사냥의 레미니선스"
+          "text": "6. 사슴 사냥의 레미니선스",
+          "originalTitle": "鹿狩りのレミニセンス — Reminiscences on her childhood"
         },
         {
           "type": "paragraph",
@@ -985,7 +1002,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "7. 대길 키튼"
+          "text": "7. 대길 키튼",
+          "originalTitle": "大吉キトゥン — Lacky kitten"
         },
         {
           "type": "paragraph",
@@ -1037,7 +1055,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "8. 비스트 메트로폴리스"
+          "text": "8. 비스트 메트로폴리스",
+          "originalTitle": "ビーストメトロポリス — Beast Metropolis"
         },
         {
           "type": "paragraph",
@@ -1089,7 +1108,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "9. 노사나불 유구"
+          "text": "9. 노사나불 유구",
+          "originalTitle": "盧舎那仏遺構 — Bronze Statue of Vairocana"
         },
         {
           "type": "paragraph",
@@ -1149,7 +1169,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "10. 우상에게 세계를 맡기고"
+          "text": "10. 우상에게 세계를 맡기고",
+          "originalTitle": "偶像に世界を委ねて — Idoratrize World"
         },
         {
           "type": "paragraph",
@@ -1193,7 +1214,8 @@ export const artificialUtopiaInRuins = {
         },
         {
           "type": "heading",
-          "text": "11. 실패를 존중하는 인류에게, 다음 2천 년을"
+          "text": "11. 실패를 존중하는 인류에게, 다음 2천 년을",
+          "originalTitle": "失敗を尊ぶ人類に、次の二千年を — For a humanity that embraces failure —— the next 2000 years."
         },
         {
           "type": "paragraph",
