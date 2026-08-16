@@ -45,5 +45,3 @@ The static files are generated in `dist/client/`. That directory, along with dep
 `.github/workflows/pages.yml` builds and publishes the website whenever `main` is updated. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**.
 
 The custom domain is defined in `public/CNAME`. Point its DNS to GitHub Pages only when the repository is ready to go public.
-
-Copyright remains with Secret Digging Club and the respective authors. No open-content license is granted.

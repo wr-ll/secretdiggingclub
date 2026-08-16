@@ -450,14 +450,6 @@ a:focus-visible {
 .prose blockquote p { margin: 0; }
 .prose blockquote cite { display: block; margin-top: 8px; color: var(--purple); font-size: 0.75rem; font-style: normal; }
 
-.article-end {
-  margin-top: 54px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.8rem;
-}
-
 .simple-page-copy { max-width: 760px; }
 
 .profile-header {
@@ -531,8 +523,6 @@ a:focus-visible {
   color: var(--muted);
   font-size: 0.8rem;
 }
-
-.footer-inner p { margin: 0; max-width: 560px; }
 
 @media (max-width: 720px) {
   .header-inner { align-items: flex-start; flex-direction: column; padding-block: 16px; }

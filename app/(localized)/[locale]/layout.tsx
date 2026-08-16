@@ -59,7 +59,6 @@ export default async function LocalizedLayout({ children, params }: { children: 
         <div id="main-content">{children}</div>
         <footer className="site-footer">
           <div className="wrap footer-inner">
-            <p>© {new Date().getFullYear()} {copy.footer}</p>
             <nav aria-label={copy.ui.footerNavigation}>
               <a href={localePath(value, "/writings")}>{copy.nav.writings}</a>
               <a href={localePath(value, "/people")}>{copy.nav.people}</a>

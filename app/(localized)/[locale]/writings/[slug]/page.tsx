@@ -49,7 +49,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
             if (block.type === "list") return <ul key={index}>{block.items.map((item) => <li key={item}>{item}</li>)}</ul>;
             return <p key={index}>{block.text}</p>;
           })}
-          <footer className="article-end">{copy.article.rights}</footer>
         </article>
       </div>
     </main>

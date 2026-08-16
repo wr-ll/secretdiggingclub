@@ -20,10 +20,8 @@ export const siteTextJa = {
     p1: "もう一度検索したり、比較したり、注釈を付けたりする価値のあるテーマが好きです。エッセイ、分析、ワーキングペーパー、レビュー、意見/解釈を公開します。",
     serverTitle: "ウェブサイトとサーバー", server1: "このサイトは検索可能な公開アーカイブです。会話はDiscordで行います。参加しただけで公開プロフィールが作られることはなく、サーバーの発言が自動転載されることもありません。", server2: "Discordからの引用は、手動で選ばれ、発言者の承認を得た場合のみ掲載します。",
     editorialTitle: "編集方針", editorial: "すべての内容はサイト管理者が確認し、手動で公開します。投稿、共同制作、公開プロフィールの掲載は管理者の判断で決定します。",
-    copyrightTitle: "著作権", copyright: "著作権は各著者に帰属します。オープンコンテンツ・ライセンスは付与しません。無断転載を禁じます。",
   },
   discord: { title: "Discord", intro: "会話、参考資料の共有、制作途中の内容のためのスペースです。", widget: "Discordサーバー", widgetHelp: "Discord側で読み込みが許可されると、ここにサーバーウィジェットが表示されます。", expect: "サーバーについて", items: ["作品、翻訳、アーカイブ、および関連する関心事について話します。", "気軽な会話と詳しい分析の両方を歓迎する環境です。", "会話は原則非公開で、ウェブサイトへ自動転載されません。", "公開プロフィールや寄稿は任意で、仮名を使用できます。"], join: "サーバーに参加", forthcoming: "招待リンク準備中" },
-  article: { writtenBy: "著者", published: "公開日", format: "種類", length: "読了時間", minutes: "分", tags: "タグ", rights: "著作権は著者に帰属します。" },
+  article: { writtenBy: "著者", published: "公開日", format: "種類", length: "読了時間", minutes: "分", tags: "タグ" },
   kinds: { "essay": "エッセイ", "working-paper": "ワーキングペーパー", "opinion-hc": "意見/解釈" },
-  footer: "Secret Digging Clubおよび各著者。無断転載を禁じます。",
 } as const;

@@ -39,7 +39,6 @@ export const siteTextEn = {
     serverTitle: "The website and the server", server1: "This website is our public, indexed archive. Discord is where conversation happens. Membership does not automatically create a public profile, and server messages are never copied here automatically.",
     server2: "A quotation from Discord is only published when it is selected manually and approved by the quoted participant.",
     editorialTitle: "Editorial approach", editorial: "All material is reviewed and posted manually by the site owner. Submissions, collaborations, and public profiles are accepted at the owner’s discretion.",
-    copyrightTitle: "Copyright", copyright: "Copyright remains with each author. No open-content license is granted. All rights are reserved.",
   },
   discord: {
     title: "Discord", intro: "A space for discussion, shared references, and works in progress.", widget: "Discord server",
@@ -52,7 +51,6 @@ export const siteTextEn = {
     ],
     join: "Join the server", forthcoming: "Invite link forthcoming",
   },
-  article: { writtenBy: "Written by", published: "Published", format: "Format", length: "Length", minutes: "min read", tags: "Tags", rights: "All rights reserved by the author." },
+  article: { writtenBy: "Written by", published: "Published", format: "Format", length: "Length", minutes: "min read", tags: "Tags" },
   kinds: { "essay": "Essay", "working-paper": "Working paper", "opinion-hc": "Opinion/HC" },
-  footer: "Secret Digging Club and the respective authors. All rights reserved.",
 } as const;
