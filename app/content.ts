@@ -1,4 +1,5 @@
 import type { Locale } from "./i18n";
+import { artificialUtopiaInRuins } from "./publication-artificial-utopia";
 
 export const site = {
   url: "https://www.secretdigging.club",
@@ -10,9 +11,10 @@ export type ContentBlock =
   | { type: "paragraph"; text: string }
   | { type: "heading"; text: string }
   | { type: "quote"; text: string; attribution?: string }
-  | { type: "list"; items: string[] };
+  | { type: "list"; items: string[] }
+  | { type: "notice"; lines: string[] };
 
-export type WritingKind = "essay" | "working-paper" | "opinion-hc";
+export type WritingKind = "essay" | "working-paper" | "opinion-hc" | "translation";
 
 type PostTranslation = {
   title: string;
@@ -28,14 +30,14 @@ export type Post = {
   date: string;
   kind: WritingKind;
   readingMinutes: number;
-  translations: Record<Locale, PostTranslation>;
+  translations: Partial<Record<Locale, PostTranslation>>;
 };
 
 export type LocalizedPost = Omit<Post, "translations"> & PostTranslation;
 
-// Add publications here only when the English, Japanese, and Korean versions
-// are all ready. The README contains a copyable example entry.
-export const posts: Post[] = [];
+// A publication can support all languages or a selected subset. It appears only
+// in the language editions included in its translations object.
+export const posts: Post[] = [artificialUtopiaInRuins];
 
 type PersonTranslation = {
   role: string;
@@ -53,17 +55,45 @@ export type Person = {
 export type LocalizedPerson = Omit<Person, "translations"> & PersonTranslation;
 
 // Profiles are opt-in. Add a person here only when their public profile is ready.
-export const people: Person[] = [];
+export const people: Person[] = [
+  {
+    slug: "wrell",
+    name: "wrell",
+    links: [],
+    translations: {
+      en: { role: "Owner / site maintainer", bio: "Owner and maintainer of the Secret Digging Club website.", interests: [] },
+      ja: { role: "オーナー / サイト管理者", bio: "Secret Digging Clubウェブサイトのオーナー兼管理者です。", interests: [] },
+      ko: { role: "소유자 / 사이트 관리자", bio: "비밀발굴부 웹사이트의 소유자이자 관리자입니다.", interests: [] },
+    },
+  },
+];
 
 export function getPosts(locale: Locale): LocalizedPost[] {
-  return posts.map(({ translations, ...post }) => ({ ...post, ...translations[locale] }));
+  return posts.flatMap(({ translations, ...post }) => {
+    const translation = translations[locale];
+    return translation ? [{ ...post, ...translation }] : [];
+  });
 }
 
 export function getPost(slug: string, locale: Locale) {
   const post = posts.find((item) => item.slug === slug);
   if (!post) return undefined;
-  const { translations, ...shared } = post;
-  return { ...shared, ...translations[locale] };
+  const translation = post.translations[locale];
+  if (!translation) return undefined;
+  return {
+    slug: post.slug,
+    author: post.author,
+    date: post.date,
+    kind: post.kind,
+    readingMinutes: post.readingMinutes,
+    ...translation,
+  };
+}
+
+export function getPostLocales(slug: string): Locale[] {
+  const post = posts.find((item) => item.slug === slug);
+  if (!post) return [];
+  return (Object.keys(post.translations) as Locale[]).filter((locale) => post.translations[locale]);
 }
 
 export function getPeople(locale: Locale): LocalizedPerson[] {

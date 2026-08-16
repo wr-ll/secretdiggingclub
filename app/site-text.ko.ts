@@ -13,7 +13,7 @@ export const siteTextKo = {
     about: "자세히 보기", people: "사람들", allProfiles: "프로필 전체 보기", noPeople: "아직 공개 프로필이 없습니다.", join: "저희 디스코드에 참여",
     joinText: "츠쿠미즈, 비봉클럽 및 관련 관심사에 관해 이야기해 보세요.", serverInfo: "서버 안내",
   },
-  writings: { title: "글", intro: "에세이, 분석, 워킹 페이퍼, 의견/해석 글을 게시합니다.", search: "글 검색", placeholder: "제목, 작성자, 종류, 태그로 검색…", noResults: "검색 결과가 없습니다.", empty: "아직 게시한 글이 없습니다." },
+  writings: { title: "글", intro: "에세이, 분석, 워킹 페이퍼, 의견/해석 글과 번역을 게시합니다.", search: "글 검색", placeholder: "제목, 작성자, 종류, 태그로 검색…", noResults: "검색 결과가 없습니다.", empty: "아직 게시한 글이 없습니다." },
   people: { title: "사람들", intro: "공개 프로필은 선택 사항이며 수동으로 관리합니다. 디스코드 서버 참여만으로 이곳에 표시되지 않습니다.", empty: "아직 공개 프로필이 없습니다.", interests: "관심사", elsewhere: "외부 링크", noLinks: "등록된 링크가 없습니다.", policy: "프로필 방침", policyText: "가명을 사용하며 수동으로 관리합니다.", publications: "게시한 글", noPublications: "아직 게시한 글이 없습니다.", allPeople: "사람들 전체 보기" },
   about: {
     title: "소개", intro: "비밀발굴부는 독립 동인 서클이자 디스코드 커뮤니티입니다.",
@@ -23,5 +23,5 @@ export const siteTextKo = {
   },
   discord: { title: "디스코드", intro: "대화, 참고자료 공유, 작업 중인 글을 위한 공간입니다.", widget: "디스코드 서버", widgetHelp: "디스코드에서 불러오기를 허용하면 여기에 서버 위젯이 표시됩니다.", expect: "서버 안내", items: ["작품, 번역, 아카이브 및 관련 관심사에 관해 대화합니다.", "가벼운 대화와 자세한 분석을 모두 환영하는 환경입니다.", "대화는 기본적으로 비공개이며 웹사이트에 자동으로 옮겨지지 않습니다.", "공개 프로필과 기고는 선택 사항이며 가명을 사용할 수 있습니다."], join: "서버 참여", forthcoming: "초대 링크 준비 중" },
   article: { writtenBy: "작성자", published: "게시일", format: "종류", length: "읽는 시간", minutes: "분", tags: "태그" },
-  kinds: { "essay": "에세이", "working-paper": "워킹 페이퍼", "opinion-hc": "의견/해석" },
+  kinds: { "essay": "에세이", "working-paper": "워킹 페이퍼", "opinion-hc": "의견/해석", "translation": "번역" },
 } as const;

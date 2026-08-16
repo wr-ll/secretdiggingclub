@@ -23,5 +23,5 @@ export const siteTextJa = {
   },
   discord: { title: "Discord", intro: "会話、参考資料の共有、制作途中の内容のためのスペースです。", widget: "Discordサーバー", widgetHelp: "Discord側で読み込みが許可されると、ここにサーバーウィジェットが表示されます。", expect: "サーバーについて", items: ["作品、翻訳、アーカイブ、および関連する関心事について話します。", "気軽な会話と詳しい分析の両方を歓迎する環境です。", "会話は原則非公開で、ウェブサイトへ自動転載されません。", "公開プロフィールや寄稿は任意で、仮名を使用できます。"], join: "サーバーに参加", forthcoming: "招待リンク準備中" },
   article: { writtenBy: "著者", published: "公開日", format: "種類", length: "読了時間", minutes: "分", tags: "タグ" },
-  kinds: { "essay": "エッセイ", "working-paper": "ワーキングペーパー", "opinion-hc": "意見/解釈" },
+  kinds: { "essay": "エッセイ", "working-paper": "ワーキングペーパー", "opinion-hc": "意見/解釈", "translation": "翻訳" },
 } as const;

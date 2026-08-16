@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getPerson, getPost, posts } from "../../../../content";
-import { formatDate, isLocale, localePath, locales, messages } from "../../../../i18n";
+import { getPerson, getPost, getPostLocales, posts } from "../../../../content";
+import { formatDate, isLocale, localePath, messages } from "../../../../i18n";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => posts.map((post) => ({ locale, slug: post.slug })));
+  return posts.flatMap((post) => getPostLocales(post.slug).map((locale) => ({ locale, slug: post.slug })));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
@@ -14,9 +14,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale)) return {};
   const post = getPost(slug, locale);
   if (!post) return {};
+  const availableLocales = getPostLocales(slug);
+  const languages = Object.fromEntries(availableLocales.map((item) => [item, localePath(item, `/writings/${slug}`)]));
   return {
     title: post.title, description: post.summary, authors: [{ name: post.author }],
-    alternates: { canonical: localePath(locale, `/writings/${slug}`), languages: { en: `/en/writings/${slug}`, ja: `/ja/writings/${slug}`, ko: `/ko/writings/${slug}`, "x-default": `/en/writings/${slug}` } },
+    alternates: { canonical: localePath(locale, `/writings/${slug}`), languages: { ...languages, ...(availableLocales.includes("en") ? { "x-default": localePath("en", `/writings/${slug}`) } : {}) } },
     openGraph: { type: "article", title: post.title, description: post.summary, publishedTime: post.date, authors: [post.author], tags: post.tags },
   };
 }
@@ -47,6 +49,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
             if (block.type === "heading") return <h2 key={index}>{block.text}</h2>;
             if (block.type === "quote") return <blockquote key={index}><p>{block.text}</p>{block.attribution ? <cite>{block.attribution}</cite> : null}</blockquote>;
             if (block.type === "list") return <ul key={index}>{block.items.map((item) => <li key={item}>{item}</li>)}</ul>;
+            if (block.type === "notice") return <aside className="translation-notice" key={index}>{block.lines.map((line, lineIndex) => lineIndex === 0 ? <strong key={line}>{line}</strong> : <p key={line}>{line}</p>)}</aside>;
             return <p key={index}>{block.text}</p>;
           })}
         </article>

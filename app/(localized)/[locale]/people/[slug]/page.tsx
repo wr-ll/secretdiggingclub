@@ -27,7 +27,7 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
       <header className="profile-header"><h1 className="profile-name">{person.name}</h1><div className="profile-summary"><span className="profile-role">{person.role}</span><p>{person.bio}</p></div></header>
       <div className="profile-body">
         <dl className="profile-facts">
-          <dt>{copy.interests}</dt><dd><ul>{person.interests.map((interest) => <li key={interest}>{interest}</li>)}</ul></dd>
+          {person.interests.length ? <><dt>{copy.interests}</dt><dd><ul>{person.interests.map((interest) => <li key={interest}>{interest}</li>)}</ul></dd></> : null}
           <dt>{copy.elsewhere}</dt><dd>{person.links.length ? person.links.map((link) => <p key={link.href}><a href={link.href} rel="me">{link.label}</a></p>) : <span>{copy.noLinks}</span>}</dd>
           <dt>{copy.policy}</dt><dd>{copy.policyText}</dd>
         </dl>

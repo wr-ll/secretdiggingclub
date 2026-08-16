@@ -1,9 +1,13 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { localeNames, locales, type Locale } from "./i18n";
 
 const storageKey = "sdc-language";
+const restrictedRoutes: Record<string, Locale[]> = {
+  "/writings/artificial-utopia-in-ruins": ["en", "ko"],
+};
 
 function detectLocale(): Locale {
   const stored = window.localStorage.getItem(storageKey);
@@ -30,25 +34,28 @@ export function LocaleRedirect() {
 }
 
 export function LanguageSwitcher({ locale, label }: { locale: Locale; label: string }) {
+  const path = usePathname().replace(/^\/(en|ja|ko)(?=\/|$)/, "");
+
   return (
     <nav className="language-switcher" aria-label={label}>
-      {locales.map((item) => (
+      {locales.map((item) => {
+        const targetPath = restrictedRoutes[path] && !restrictedRoutes[path].includes(item) ? "/writings" : path;
+        return (
         <a
           key={item}
-          href={`/${item}`}
+          href={`/${item}${targetPath}`}
           hrefLang={item}
           lang={item}
           aria-current={item === locale ? "page" : undefined}
           onClick={(event) => {
             event.preventDefault();
             window.localStorage.setItem(storageKey, item);
-            const path = window.location.pathname.replace(/^\/(en|ja|ko)(?=\/|$)/, "");
-            window.location.assign(`/${item}${path}${window.location.search}${window.location.hash}`);
+            window.location.assign(`/${item}${targetPath}${window.location.search}${window.location.hash}`);
           }}
         >
           {localeNames[item]}
         </a>
-      ))}
+      )})}
     </nav>
   );
 }

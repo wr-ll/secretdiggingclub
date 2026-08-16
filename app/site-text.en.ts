@@ -25,7 +25,7 @@ export const siteTextEn = {
     joinText: "Come talk with us about tkmiz, ZUN's Music Collections, and related interests.", serverInfo: "Server information",
   },
   writings: {
-    title: "Writings", intro: "Essays, analyses, working papers, and Opinion/HC posts.", search: "Search writings",
+    title: "Writings", intro: "Essays, analyses, working papers, Opinion/HC posts, and translations.", search: "Search writings",
     placeholder: "Search by title, author, type, or tag…", noResults: "No writings match this search.", empty: "No writing has been published yet.",
   },
   people: {
@@ -52,5 +52,5 @@ export const siteTextEn = {
     join: "Join the server", forthcoming: "Invite link forthcoming",
   },
   article: { writtenBy: "Written by", published: "Published", format: "Format", length: "Length", minutes: "min read", tags: "Tags" },
-  kinds: { "essay": "Essay", "working-paper": "Working paper", "opinion-hc": "Opinion/HC" },
+  kinds: { "essay": "Essay", "working-paper": "Working paper", "opinion-hc": "Opinion/HC", "translation": "Translation" },
 } as const;

@@ -13,6 +13,11 @@ test("exports the main public pages", async () => {
     "en/writings.html",
     "ja/writings.html",
     "ko/writings.html",
+    "en/writings/artificial-utopia-in-ruins.html",
+    "ko/writings/artificial-utopia-in-ruins.html",
+    "en/people/wrell.html",
+    "ja/people/wrell.html",
+    "ko/people/wrell.html",
     "sitemap.xml",
     "robots.txt",
   ];
@@ -25,25 +30,45 @@ test("renders the circle identity and crawlable content", async () => {
   assert.match(html, /<title>Secret Digging Club<\/title>/i);
   assert.match(html, /Secret[\s\S]*Digging[\s\S]*Club/i);
   assert.match(html, /Recent writing/i);
-  assert.match(html, /No writing has been published yet/i);
+  assert.match(html, /Artificial Utopia in Ruins/i);
   assert.match(html, /Opinion\/HC/i);
   assert.doesNotMatch(html, /The Background Is Not Background|paper-moon|index-zero|club-curator/i);
   assert.doesNotMatch(html, /SDC\s*[–/-]\s*001|A small circle for deep reading|Social links forthcoming|RSS feed/i);
 });
 
-test("exports translated production-ready empty states", async () => {
-  const [japanese, korean, discord] = await Promise.all([
+test("publishes the album translation only in English and Korean", async () => {
+  const [japanese, korean, english, englishArticle, koreanArticle] = await Promise.all([
     readFile(new URL("ja/writings.html", outputRoot), "utf8"),
     readFile(new URL("ko.html", outputRoot), "utf8"),
     readFile(new URL("en/writings.html", outputRoot), "utf8"),
+    readFile(new URL("en/writings/artificial-utopia-in-ruins.html", outputRoot), "utf8"),
+    readFile(new URL("ko/writings/artificial-utopia-in-ruins.html", outputRoot), "utf8"),
   ]);
   assert.match(japanese, /記事はまだ公開されていません/);
   assert.match(japanese, /意見\/解釈/);
+  assert.doesNotMatch(japanese, /Artificial Utopia in Ruins|霊長新益京/);
   assert.match(korean, /비밀발굴부/);
   assert.match(korean, /의견\/해석/);
   assert.match(korean, /츠쿠미즈/);
   assert.match(korean, /비봉클럽/);
-  assert.match(discord, /No writing has been published yet/);
+  assert.match(korean, /폐허 속 인공 낙원/);
+  assert.match(english, /Artificial Utopia in Ruins/);
+  assert.match(englishArticle, /Unofficial fan translation/);
+  assert.match(englishArticle, /Team Shanghai Alice \/ ZUN/);
+  assert.match(koreanArticle, /비공식 팬 번역입니다/);
+  assert.match(koreanArticle, /상하이 앨리스 환악단 \/ ZUN/);
+  await assert.rejects(access(new URL("ja/writings/artificial-utopia-in-ruins.html", outputRoot)));
+});
+
+test("publishes the wrell profile in all languages", async () => {
+  const [english, japanese, korean] = await Promise.all([
+    readFile(new URL("en/people/wrell.html", outputRoot), "utf8"),
+    readFile(new URL("ja/people/wrell.html", outputRoot), "utf8"),
+    readFile(new URL("ko/people/wrell.html", outputRoot), "utf8"),
+  ]);
+  assert.match(english, /Owner \/ site maintainer/);
+  assert.match(japanese, /オーナー \/ サイト管理者/);
+  assert.match(korean, /소유자 \/ 사이트 관리자/);
 });
 
 test("includes the permanent Discord invitation", async () => {

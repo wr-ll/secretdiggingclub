@@ -450,6 +450,19 @@ a:focus-visible {
 .prose blockquote p { margin: 0; }
 .prose blockquote cite { display: block; margin-top: 8px; color: var(--purple); font-size: 0.75rem; font-style: normal; }
 
+.translation-notice {
+  margin-bottom: 44px;
+  padding: 18px 20px;
+  border: 1px solid var(--purple-dark);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.translation-notice strong { display: block; margin-bottom: 8px; color: var(--text); }
+.translation-notice p { margin: 2px 0; }
+
 .simple-page-copy { max-width: 760px; }
 
 .profile-header {
