@@ -10,7 +10,7 @@ export const artificialRuinsInUtopiaAnalysis = {
     "en": {
       "title": "Artificial Ruins in Utopia - CyanAqua's Analysis",
       "subtitle": "An analysis of 霊長新益京 ~ Artificial Utopia in Ruins.",
-      "summary": "CyanAqua examines the album's worldbuilding, scientism, and portrayal of Renko Usami.",
+      "summary": "An analysis of 霊長新益京 ~ Artificial Utopia in Ruins.",
       "tags": [
         "Hifuu Club",
         "Touhou Project",
@@ -151,7 +151,7 @@ export const artificialRuinsInUtopiaAnalysis = {
     "ja": {
       "title": "ユートピアの人工遺跡 - CyanAquaによる分析",
       "subtitle": "『霊長新益京 ~ Artificial Utopia in Ruins.』の分析",
-      "summary": "CyanAquaがアルバムの世界観、科学主義、宇佐見蓮子の描写を分析します。",
+      "summary": "『霊長新益京 ~ Artificial Utopia in Ruins.』の分析。",
       "tags": [
         "秘封倶楽部",
         "東方Project",
@@ -292,7 +292,7 @@ export const artificialRuinsInUtopiaAnalysis = {
     "ko": {
       "title": "유토피아의 인공 유적 - CyanAqua의 분석",
       "subtitle": "『영장 아라마시쿄 ~ Artificial Utopia in Ruins.』 분석",
-      "summary": "CyanAqua가 앨범의 세계관, 과학주의, 우사미 렌코의 묘사를 분석합니다.",
+      "summary": "『영장 아라마시쿄 ~ Artificial Utopia in Ruins.』에 대한 분석.",
       "tags": [
         "비봉클럽",
         "동방 프로젝트",
