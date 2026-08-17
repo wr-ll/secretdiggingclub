@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 import { getPerson, getPost, getPostLocales, posts } from "../../../../content";
 import { formatDate, isLocale, localePath, messages } from "../../../../i18n";
 
+function InlineText({ text }: { text: string }) {
+  return <>{text.split(/(\*[^*]+\*)/g).map((part, index) => part.startsWith("*") && part.endsWith("*") ? <em key={index}>{part.slice(1, -1)}</em> : part)}</>;
+}
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -46,11 +50,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
         <aside className="article-aside" aria-label={copy.article.tags}><p>{copy.article.tags}</p><ul className="tag-list">{post.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul></aside>
         <article className="prose">
           {post.blocks.map((block, index) => {
-            if (block.type === "heading") return <div className="article-section-heading" key={index}><h2>{block.text}</h2>{block.originalTitle ? <p><em>{block.originalTitle}</em></p> : null}</div>;
-            if (block.type === "quote") return <blockquote key={index}><p>{block.text}</p>{block.attribution ? <cite>{block.attribution}</cite> : null}</blockquote>;
-            if (block.type === "list") return <ul key={index}>{block.items.map((item) => <li key={item}>{item}</li>)}</ul>;
+            if (block.type === "heading") {
+              const heading = <InlineText text={block.text} />;
+              return <div className={`article-section-heading${block.level === 3 ? " article-section-heading-sub" : ""}`} key={index}>{block.level === 3 ? <h3>{heading}</h3> : <h2>{heading}</h2>}{block.originalTitle ? <p><em>{block.originalTitle}</em></p> : null}</div>;
+            }
+            if (block.type === "quote") return <blockquote key={index}><p><InlineText text={block.text} /></p>{block.attribution ? <cite>{block.attribution}</cite> : null}</blockquote>;
+            if (block.type === "list") return <ul key={index}>{block.items.map((item) => <li key={item}><InlineText text={item} /></li>)}</ul>;
             if (block.type === "notice") return <aside className="translation-notice" key={index}>{block.lines.map((line, lineIndex) => lineIndex === 0 ? <strong key={line}>{line}</strong> : <p key={line}>{line}</p>)}</aside>;
-            return <p key={index}>{block.text}</p>;
+            return <p key={index}><InlineText text={block.text} /></p>;
           })}
         </article>
       </div>

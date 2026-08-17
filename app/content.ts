@@ -1,4 +1,5 @@
 import type { Locale } from "./i18n";
+import { artificialRuinsInUtopiaAnalysis } from "./publication-artificial-ruins-analysis";
 import { artificialUtopiaInRuins } from "./publication-artificial-utopia";
 
 export const site = {
@@ -9,7 +10,7 @@ export const site = {
 
 export type ContentBlock =
   | { type: "paragraph"; text: string }
-  | { type: "heading"; text: string; originalTitle?: string }
+  | { type: "heading"; text: string; originalTitle?: string; level?: 2 | 3 }
   | { type: "quote"; text: string; attribution?: string }
   | { type: "list"; items: string[] }
   | { type: "notice"; lines: string[] };
@@ -37,7 +38,7 @@ export type LocalizedPost = Omit<Post, "translations"> & PostTranslation;
 
 // A publication can support all languages or a selected subset. It appears only
 // in the language editions included in its translations object.
-export const posts: Post[] = [artificialUtopiaInRuins];
+export const posts: Post[] = [artificialRuinsInUtopiaAnalysis, artificialUtopiaInRuins];
 
 type PersonTranslation = {
   role: string;

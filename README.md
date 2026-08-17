@@ -9,6 +9,7 @@ A lightweight, multilingual website for Secret Digging Club (비밀발굴부), b
 - `app/site-text.ko.ts` — the corresponding Korean wording.
 - `app/content.ts` — Discord details, publications, and opt-in public profiles.
 - `app/publication-artificial-utopia.ts` — the English and Korean album-story translation.
+- `app/publication-artificial-ruins-analysis.ts` — CyanAqua's analysis in English, Japanese, and Korean.
 - `app/globals.css` — colours, typography, and layout.
 - `public/sitemap.xml` — add each available language URL when publishing a new article or profile.
 

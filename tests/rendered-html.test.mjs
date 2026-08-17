@@ -15,6 +15,9 @@ test("exports the main public pages", async () => {
     "ko/writings.html",
     "en/writings/artificial-utopia-in-ruins.html",
     "ko/writings/artificial-utopia-in-ruins.html",
+    "en/writings/artificial-ruins-in-utopia-cyanaqua-analysis.html",
+    "ja/writings/artificial-ruins-in-utopia-cyanaqua-analysis.html",
+    "ko/writings/artificial-ruins-in-utopia-cyanaqua-analysis.html",
     "en/people/wrell.html",
     "ja/people/wrell.html",
     "ko/people/wrell.html",
@@ -44,16 +47,16 @@ test("publishes the album translation only in English and Korean", async () => {
     readFile(new URL("en/writings/artificial-utopia-in-ruins.html", outputRoot), "utf8"),
     readFile(new URL("ko/writings/artificial-utopia-in-ruins.html", outputRoot), "utf8"),
   ]);
-  assert.match(japanese, /記事はまだ公開されていません/);
   assert.match(japanese, /意見\/解釈/);
-  assert.doesNotMatch(japanese, /Artificial Utopia in Ruins|霊長新益京/);
+  assert.match(japanese, /ユートピアの人工遺跡 - CyanAquaによる分析/);
+  assert.doesNotMatch(japanese, /href="\/ja\/writings\/artificial-utopia-in-ruins"/);
   assert.match(korean, /비밀발굴부/);
   assert.match(korean, /의견\/해석/);
   assert.match(korean, /츠쿠미즈/);
   assert.match(korean, /비봉클럽/);
   assert.match(korean, /영장 아라마시쿄 ~ Artificial Utopia in Ruins\./);
   assert.match(english, /Artificial Utopia in Ruins/);
-  assert.doesNotMatch(english, /霊長新益京 ~ Artificial Utopia in Ruins\./);
+  assert.doesNotMatch(english, /<strong>霊長新益京 ~ Artificial Utopia in Ruins\.<\/strong>/);
   assert.match(englishArticle, /Unofficial fan translation/);
   assert.match(englishArticle, /Team Shanghai Alice \/ ZUN/);
   assert.match(englishArticle, /美しく心地の良い犯罪 — Criminal Ingress/);
@@ -62,6 +65,22 @@ test("publishes the album translation only in English and Korean", async () => {
   assert.match(koreanArticle, /1\. 아름답고 기분 좋은 범죄/);
   assert.match(koreanArticle, /美しく心地の良い犯罪 — Criminal Ingress/);
   await assert.rejects(access(new URL("ja/writings/artificial-utopia-in-ruins.html", outputRoot)));
+});
+
+test("publishes CyanAqua's analysis in all three languages", async () => {
+  const [english, japanese, korean] = await Promise.all([
+    readFile(new URL("en/writings/artificial-ruins-in-utopia-cyanaqua-analysis.html", outputRoot), "utf8"),
+    readFile(new URL("ja/writings/artificial-ruins-in-utopia-cyanaqua-analysis.html", outputRoot), "utf8"),
+    readFile(new URL("ko/writings/artificial-ruins-in-utopia-cyanaqua-analysis.html", outputRoot), "utf8"),
+  ]);
+  assert.match(english, /Artificial Ruins in Utopia - CyanAqua's Analysis/);
+  assert.match(english, /Science and Scientism/);
+  assert.match(english, /<em>Changeability of Strange Dream<\/em>/);
+  assert.match(japanese, /ユートピアの人工遺跡 - CyanAquaによる分析/);
+  assert.match(japanese, /科学と科学主義/);
+  assert.match(korean, /유토피아의 인공 유적 - CyanAqua의 분석/);
+  assert.match(korean, /렌코와 마에리베리는/);
+  assert.doesNotMatch(korean, /마리벨/);
 });
 
 test("publishes the wrell profile in all languages", async () => {
