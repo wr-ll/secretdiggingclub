@@ -23,7 +23,7 @@ export const artificialRuinsInUtopiaAnalysis = {
         },
         {
           "type": "paragraph",
-          "text": "This is a brief analysis of the story of Artificial Ruins in Utopia, focusing on two key aspects of the plot. The plot is largely separated into two halves, each with its core theme. This analysis attempts to explain the messages the author wanted to convey, as well as tying them into previous works and character analysis."
+          "text": "This is a brief analysis of the story of Artificial Ruins in Utopia (AUiR), focusing on two key aspects of the plot. The plot is largely separated into two halves, each with its core theme. This analysis attempts to explain the messages the author wanted to convey, as well as tying them into previous works and character analysis."
         },
         {
           "type": "heading",
@@ -31,7 +31,7 @@ export const artificialRuinsInUtopiaAnalysis = {
         },
         {
           "type": "paragraph",
-          "text": "Renko and Maribel sneak into an abandoned city built upon the historical capital of Nara. One that was built purely on the basis of careful scientific planning, but was later discarded due to being considered a failure, their biggest mistake being abandoning religion. There, they find a gateway to another world, where a festival was taking place. They eventually reach the Great Buddha Hall, only to find the Great Buddha within to be hollow."
+          "text": "Renko and Maribel sneak into an abandoned city built upon the historical capital of Nara. One that was built purely on the basis of careful scientific planning, but was later discarded due to being considered a failure, their biggest mistake being abandoning religion. There, they find a gateway to another world, where a festival was taking place. They eventually reach the Great Buddha Hall, only the find the Great Buddha within to be hollow."
         },
         {
           "type": "heading",
@@ -39,44 +39,44 @@ export const artificialRuinsInUtopiaAnalysis = {
         },
         {
           "type": "paragraph",
-          "text": "This story’s former half treads upon one of the formerly (mostly) untouched aspects of the world of the Hifuu Club: its past. As it turns out, the society of the Hifuu Club is not a direct continuation of ours, as I imagine most people would assume, but one severed by disasters."
+          "text": "This story's former half treads upon one of the formerly (mostly) untouched aspects of the world of the Hifuu Club; its past. As it turns out, the society of the Hifuu Club is not a direct continuation of ours (as I image most people would assume), but one severed by disasters."
         },
         {
           "type": "paragraph",
-          "text": "In Track 3, it is revealed that natural disasters, known and unknown, forced humanity underground. Of course, this seems to be referencing the current climate crisis. This also implies that humanity eventually failed to stop climate change, eventually succumbing to its effects. Consequently, humanity was forced underground, its population in decline due to being blocked away from the sun and wind. As the disasters of the surface settled down, humanity naturally returned to the surface."
+          "text": "In Track 3, it is revealed that natural disasters, known and unknown, forced humanity underground. Of course, this seems to be referencing the current climate crisis. This also implies that humanity eventually failed to stop climate change, eventually succumbing to its effects. Consequently, humanity has been forced underground, its population in decline due to being blocked away from the sun and wind. As the disasters of the surface settled down, humanity naturally returned back to the surface."
         },
         {
           "type": "paragraph",
-          "text": "Once on the surface, it is revealed that plant life has mostly died out due to droughts and desertification. The desertified lands were used for development, while the still-verdant lands were used for preservation. Surprisingly, it is also revealed that humanity had somehow managed to restrain its growth, although it is said that they were practically forced into it in Track 4."
+          "text": "Once on the surface, it is revealed that plant life has mostly died out due to droughts and desertification. The desertified lands were used for development while the still-verdant lands were used for preservation. Surprisingly, it is also revealed that humanity had somehow managed to restrain its growth (although, it is said they were practically forced into it, Track 4)."
         },
         {
           "type": "paragraph",
-          "text": "Instead of infinite growth, they turned to careful scientific planning as the driving force for redevelopment. One of, if not the, first attempts was Reichō Aramashikyō: the abandoned city in the story. This was, however, deemed a failure for reasons that I shall touch upon later. In any case, it seems they successfully managed to repopulate the surface, leaving the underground abandoned."
+          "text": "Instead of infinite growth, they instead turned to careful scientific planning as the driving force for redevelopment. One of, if not the, first attempts was Reichō Aramashikyō: the abandoned city in the story. This was however, deemed a failure for reasons that I shall touch upon later. In any case, it seems they successfully did manage to repopulate the surface, leaving the underground abandoned."
         },
         {
           "type": "heading",
-          "text": "Effects on Other Works",
+          "text": "Effects on other works",
           "level": 3
         },
         {
           "type": "paragraph",
-          "text": "This quite large worldbuilding segment also deeply affects our perception of previous works."
+          "text": "This quite large worldbuilding segment also deeply affects our perception of previous works as well."
         },
         {
           "type": "paragraph",
-          "text": "First, the reason behind the need to synthesize products such as bamboo shoots in *Changeability of Strange Dream* or strawberries in *Magical Astronomy* is much more clearly revealed here. While it is possible that overdevelopment caused certain plants to die out, in retrospect, it does seem more likely that plants cultivated extensively by humans would have died from the aforementioned “external” causes instead. Of course, climate disasters are still, to an extent, artificial."
+          "text": "First, the reason behind the need to synthesize products such as bamboo shoots (CoSD) or strawberries (MA) is much more clearly revealed here. While it is possible that overdevelopment caused certain plants to die out, in retrospect, it does seem more likely that such plants that are cultivated a lot by humans would have died from the aforementioned \"external\" causes instead (of course, climate disasters are still to an extent, artificial)."
         },
         {
           "type": "paragraph",
-          "text": "The limited growth and population decline mentioned in *Magical Astronomy* are also given much more context here, as is the line about population control. Although *Magical Astronomy* states that the reason for the decline is social inequality exacerbated through capitalism, the explanations in both *Magical Astronomy* and *Artificial Ruins in Utopia* may be true at the same time—for example, if such social inequality was intentionally used as a means of controlling population growth."
+          "text": "The limited growth and population decline mentioned in MA is also given much more context here, as well as the line about population control. Although MA states that the reason for the decline is social inequality exacerbated through capitalism, both MA and AUiR's explanations may be true at the same time (e.g. using such social intentionally as means of controlling the population growth)."
         },
         {
           "type": "paragraph",
-          "text": "Another point brought up in *Magical Astronomy* is the colonization of Mars, or at least attempts at it. This is presented as unrealistic in *Trojan Green Asteroid* and is also met with skepticism by Renko in *Magical Astronomy*. Paired with the main plot of *Magical Astronomy*, that being the colonization of the Moon, it shows how humanity is actively trying to find alternatives—or perhaps backups—to Earth, with the reason now being clear."
+          "text": "Another point brought up in MA is Mars colonization (or at least, attempts of such). This is brought up as unrealistic in TGA, and also met with skepticism by Renko in MA. Paired with the main plot of MA, that being colonization of the Moon, it shows how humanity is actively trying to find alternatives (or perhaps, backups) to Earth, with the reason now being clear."
         },
         {
           "type": "paragraph",
-          "text": "Prior to *Artificial Ruins in Utopia*, I assumed that the reason for most of these things was environmental destruction caused by pollution and overdevelopment. However, the explanation in *Artificial Ruins in Utopia* gives a much clearer motivation for humanity’s actions in *Magical Astronomy* and *Trojan Green Asteroid*. This is especially true of *Trojan Green Asteroid*, whose plot revolved around a satellite launched to test the terraforming of Earth. The motivation for this is now obvious, as humanity is indeed left with possibly undeveloped deserts that it may be able to revitalize through such efforts."
+          "text": "Now, prior to AUiR, the reason for most of these I assumed to be environmental destruction due to pollution and overdevelopment. However, the explanation in AUiR gives a much clearer motivation for humanity's actions in MA and TGA. Especially in TGA, whose plot revolved around a satellite launched in order to test terraforming the Earth. The motivations for this is now obvious, as humanity is indeed left with (possibly yet undeveloped) deserts that they may be able to revitalize through such efforts."
         },
         {
           "type": "heading",
@@ -84,27 +84,27 @@ export const artificialRuinsInUtopiaAnalysis = {
         },
         {
           "type": "paragraph",
-          "text": "Scientism is the belief that science is the best or only way to interact with reality, and it is a major theme in this album. The death of mythology and fiction was also touched upon in *Neo-traditionalism of Japan*, but it is brought to full force here, serving as the major theme of the latter half of the album."
+          "text": "Scientism is the belief that science is the best or only way to interact with reality, and is a major theme in this album. The death of mythology and fiction was also touched upon in NtoJ, but is brought to full force here, serving as the major theme of the latter half of the album."
         },
         {
           "type": "paragraph",
-          "text": "Science is, of course, a very useful tool. As far as we know, it allows us to approach so-called objective reality, expanding our knowledge base. Even in the story, it is science that allowed humans to rebuild society. However, the issue arises once humanity starts misusing science."
+          "text": "Science is of course, a very useful tool. As far as we know, it allows us to approach the so-called objective reality, expanding our knowledge base. Even in the story, it is science that allowed humans to rebuild society. However, the issue arises once humanity starts misusing science."
         },
         {
           "type": "paragraph",
-          "text": "Reichō Aramashikyō is said to be a planned city created through science, built upon the ancient capital of Nara. The humans there had completely abandoned religion, with their arts and culture shaped by nothing but science. The deer that were considered sacred are implied to be hunted by humans even in the present day. They went so far as to abandon all of the city’s historical religious relics, instead preserving them through monuments made of stone and metal that intentionally avoided any religious design. Ironically, these monuments were said to have been mocked for looking alien and like “a theme park for some new religious movement.”"
+          "text": "Reichō Aramashikyō is said to be a planned city created through science, build on the ancient capital of Nara. The humans there had completely abandoned religion, their arts and culture shaped by nothing but science. The deer that were considered sacred is implied to be hunted by humans even at the present day. They went so far as to abandon all its historical religious relics, instead being preserved via monuments made of stone and metal that intentionally avoided any religious design, which was ironically said to have been mocked for looking alien and like \"a theme park for some new religious movement.\""
         },
         {
           "type": "paragraph",
-          "text": "This brings up another interesting point: science is made analogous to religion at certain points in the story—Tracks 4, 8, and 11. I believe this is a reference to how scientism has caused people to blindly believe in science, making it no different from the religions they shunned so much. Indeed, they entrusted their lives to science to such an extent that it was no longer merely a method of obtaining knowledge, but the entire basis of the city’s so-called culture. Additionally, in Track 11, there is the line, “Wasn’t ‘science’ supposed to be capable of correcting its failures?” This line implies that science’s defining characteristic—correcting its own mistakes, as mentioned in Track 5—was no longer functioning correctly in the case of Reichō Aramashikyō."
+          "text": "This brings up another interesting point, which is that science is made analogous to religion at certain points in the story (Track 4, Track 8 and Track 11). I believe this is a reference to how scientism has caused people to blindly believe in science, making it no different from the religions they shunned so much. Indeed, they have entrusted their lives to science so much, it was no longer just a method of obtaining knowledge, but the entire basis of the so-called culture of the city. Additionally in Track 11, there is the line \"Wasn’t ‘science’ supposed to be capable of correcting its failures?\" This line implies that science's defining characterstic: correcting its own mistakes (Track 5), was no longer functioning correctly in the case of Reichō Aramashikyō."
         },
         {
           "type": "paragraph",
-          "text": "It is also ironic that Reichō Aramashikyō, a city built upon nothing but science, was eventually deemed a failure and abandoned by science itself. However, one thing brought into question is whether there was ever any substance to the city. A city that had discarded its own culture and traditions, one that was completely spiritually empty, might have been hollow from the beginning, just like the Great Buddha in Track 9."
+          "text": "It is also ironic how Reichō Aramashikyō, a city built up by nothing but science was eventually deemed a failure and abandoned by science itself. However, one thing that is put to question is whether there really was any substance to the city. A city that had gotten rid of its own culture and traditions, one that was completely spiritually empty, might have already been hollow from the beginning, just like the Great Buddha (Track 9)."
         },
         {
           "type": "paragraph",
-          "text": "The final line of Track 10 also presents the significance of religion, tradition, and mythology, as they allowed humans to create grand works of art that will outlive humanity itself."
+          "text": "The final line of Track 10 also presents the significance of religion, tradition and mythology, as it had allowed humans to great grand works of art that will outlive humanity itself."
         },
         {
           "type": "heading",
@@ -112,27 +112,27 @@ export const artificialRuinsInUtopiaAnalysis = {
         },
         {
           "type": "paragraph",
-          "text": "This album is another Renko-style work. In other words, the bulk of the text is not composed of fantastical descriptions of otherworldly adventures, but of scientific and social commentary with an adventure on the side."
+          "text": "This album is another Renko styled one. In other words, the bulk of the text isn't fantastical descriptions of otherworldly adventures, but scientific and social commentary with an adventure on the side."
         },
         {
           "type": "paragraph",
-          "text": "As such, we learn a little more about her character in this album as well, with Merry’s development remaining more on the sidelines this time."
+          "text": "As such, we learn a bit more of her character in this album as well (with Merry's development more on the sidelines this time)."
         },
         {
           "type": "paragraph",
-          "text": "From the first track, this album makes direct reference to Renko’s occultist friends, who had previously only been alluded to in *Ghostly Field Club*. It also further showcases her tendency to brazenly commit crimes when doing so serves her goals, as seen in *Taboo Japan Disentanglement*."
+          "text": "From the first track, this album makes direct reference to Renko's occultist friends, who have only been alluded to in GFC, as well further showcasing as her tendency to brazenly commit crimes if for her own goals (TJD)."
         },
         {
           "type": "paragraph",
-          "text": "Perhaps most importantly, it also shows her stance on science. Renko is a physics student; she is practically a scientist herself. Yet she is highly critical of the science of her time, as seen in *Magical Astronomy* and *Taboo Japan Disentanglement*. She is pessimistic about the future of physics, saying that it is approaching its end as it plunges into the realm of philosophy and interpretation in *Magical Astronomy*."
+          "text": "But perhaps most importantly, it also shows her stance on science. Renko is a physics student; she is practically a scientist herself. Yet, she is highly critical of the science of her time (MA, TJD). She is pessimistic about the future of physics, saying that it is coming to its end while plunging into the realm of philosophy and interpretation (MA)."
         },
         {
           "type": "paragraph",
-          "text": "She is also highly critical of the scientism mentioned above. She accepts the fantastical and the mystical with help from Merry’s power, incorporating both these things and science into her interpretations of the world. This, in turn, allows her to truly honor failure and uphold the values of science as well."
+          "text": "She is also seen to be highly critical of the scientism mentioned above. She accepts the fantastical and the mystical (with help from Merry's power), incorporating both this and the scientific into her interpretations of the world. This, in turn, allows her to truly honor failure and uphold the values of science as well."
         },
         {
           "type": "paragraph",
-          "text": "Merry, while slightly lagging behind Renko in knowledge, also shares a similar worldview. This allows the two members of the Hifuu Club to truly envision a new Nara rebuilt with faith and tradition."
+          "text": "Merry, while slightly lagging behind Renko in knowledge, also shares a similar worldview. This allows the two Hifuu Club members to truly envision a new Nara rebuilt with faith and tradition."
         },
         {
           "type": "heading",
@@ -140,11 +140,11 @@ export const artificialRuinsInUtopiaAnalysis = {
         },
         {
           "type": "paragraph",
-          "text": "This album serves as a warning, illustrating a future in which climate change has eventually brought human civilization to ruin. Scorching heatwaves and stronger natural disasters are already phenomena occurring all across the world. While showing us a potential future for our world, it also reveals the past of the Hifuu Club’s world, recontextualizing various aspects of previous albums."
+          "text": "This album serves as a warning, illustrating a future where climate change has eventually brought human civilization to ruin. Scorching heatwaves and stronger natural disasters is already phenomena happening all across the world. While also showing us a potential future of our world, it also shows us the past of the world of the Hifuu Club, recontextualizing various aspects of previous albums."
         },
         {
           "type": "paragraph",
-          "text": "Moreover, through the words of Renko Usami, it criticizes blind faith in and the misappropriation of science while emphasizing the importance of faith and tradition as key aspects of human society."
+          "text": "Moreover, it criticizes blind faith in and misappropriation of science, and emphasizes the importance of faith and tradition as a key aspect of human society, through the words of Renko Usami."
         }
       ]
     },

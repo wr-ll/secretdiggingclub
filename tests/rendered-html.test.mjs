@@ -77,7 +77,8 @@ test("publishes CyanAqua's analysis in all three languages", async () => {
   assert.match(english, /An analysis of 霊長新益京 ~ Artificial Utopia in Ruins\./);
   assert.doesNotMatch(english, /worldbuilding, scientism, and portrayal of Renko Usami/);
   assert.match(english, /Science and Scientism/);
-  assert.match(english, /<em>Changeability of Strange Dream<\/em>/);
+  assert.match(english, /story of Artificial Ruins in Utopia \(AUiR\)/);
+  assert.match(english, /bamboo shoots \(CoSD\) or strawberries \(MA\)/);
   assert.match(japanese, /ユートピアの人工遺跡 - CyanAquaによる分析/);
   assert.match(japanese, /『霊長新益京 ~ Artificial Utopia in Ruins\.』の分析。/);
   assert.match(japanese, /科学と科学主義/);
