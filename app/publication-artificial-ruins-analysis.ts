@@ -290,7 +290,7 @@ export const artificialRuinsInUtopiaAnalysis = {
       ]
     },
     "ko": {
-      "title": "유토피아의 인공 유적 - CyanAqua의 분석",
+      "title": "영장 아라마시쿄 - CyanAqua의 분석",
       "subtitle": "『영장 아라마시쿄 ~ Artificial Utopia in Ruins.』 분석",
       "summary": "『영장 아라마시쿄 ~ Artificial Utopia in Ruins.』에 대한 분석.",
       "tags": [
